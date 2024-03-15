@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Center content vertically */
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    /* Light gray background */
+    margin: 0;
+    /* Remove default margin */
+    height: 100vh;
+    /* Take up full viewport height */
+}
+
+#foodItems {
+    margin-top: 20px;
+    /* Add space between button and food items */
+}
+
+#orderButton {
+    padding: 12px 24px;
+    /* Increase padding */
+    font-size: 18px;
+    /* Increase button font size */
+    background-color: #ff7f0e;
+    /* Orange background */
+    color: #fff;
+    /* White text color */
+    border: none;
+    /* Remove default button border */
+    border-radius: 6px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+#orderButton:hover {
+    background-color: #e65c00;
+    /* Darker orange on hover */
+}
+
+input[type="checkbox"] {
+    display: none;
+    /* Hide default checkboxes */
+}
+
+label {
+    display: inline-block;
+    /* Make labels inline-block for better alignment */
+    margin-right: 15px;
+    /* Add space between checkbox and label */
+    padding: 10px 20px;
+    /* Add padding to labels */
+    background-color: #fff;
+    /* White background */
+    border: 2px solid #ddd;
+    /* Add border */
+    border-radius: 8px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+label:hover {
+    background-color: #f0f0f0;
+    /* Light gray background on hover */
+}
+
+input[type="checkbox"]:checked+label {
+    background-color: #ff7f0e;
+    /* Orange background for checked labels */
+    color: #fff;
+    /* White text color for checked labels */
+}
+
+#foodImage {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    /* Reduce margin */
+    display: none;
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add shadow */
+}
+
+#orderId {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+    /* Decrease font size */
+    color: #ff7f0e;
+    display: none;
+}
